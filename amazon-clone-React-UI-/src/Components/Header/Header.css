@@ -1,0 +1,111 @@
+.header {
+    max-height: 60px;
+    max-width: 100%;
+    background-color: #131921;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+.Header__SearchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: orange;
+}
+
+.header__Search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 22px;
+}
+
+.Search__Input {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.headerOptionOne:hover {
+    cursor: pointer;
+    color: rgb(184, 180, 180);
+}
+.header__Option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.headerOptionOne {
+    font-size: 10px;
+}
+
+.headerOptionTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+.headerOptionTwo:hover{
+    color: lightgray;
+    cursor: pointer;
+}
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header__basketCount {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width:812px) {
+    .header {
+        max-height: 40px;
+        width: 110%;
+    }
+
+    .header__logo {
+        width: 50px;
+        object-fit: contain;
+        margin-top: 8px;
+        height: 34px;
+    }
+
+    .Search__Input {
+        height: 2px;
+        padding: 10px;
+        border: none;
+        width: 50px;
+    }
+
+    .Header__SearchIcon {
+        height: 12px !important;
+    }
+
+    .headerOptionOne {
+        font-size: 9px;
+    }
+    .headerOptionTwo{
+        font-size: 12px;
+        font-weight: 200;
+        font-style: none;
+    }
+}
